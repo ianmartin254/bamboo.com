@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Gallery</h1>
+        <p>Explore our amazing tour destinations!</p>
+    </header>
+    <main>
+        <div class="gallery">
+            <img src="OIP.jpeg" alt="Tour 1" onclick="openModal(this.src)">
+            <img src="OIP.jpeg" alt="Tour 2" onclick="openModal(this.src)">
+            <img src="image3.jpg" alt="Tour 3" onclick="openModal(this.src)">
+            <img src="OIP.jpeg" alt="Tour 4" onclick="openModal(this.src)">
+            <img src="image5.jpg" alt="Tour 5" onclick="openModal(this.src)">
+            <img src="OIP.jpeg" alt="Tour 6" onclick="openModal(this.src)">
+        </div>
+    </main>
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
